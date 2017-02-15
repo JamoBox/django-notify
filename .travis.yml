@@ -6,8 +6,15 @@ python:
   - '3.6'
   - 'nightly'
 
+install:
+  - pip install Django
+
 script: 'python --version' # placeholder
 
 matrix:
-  allow-failures:
+  fast_finish: true
+  allow_failures:
     - python: 'nightly'
+
+notifications:
+    slack: tech-buddies:B704esrJDxKSumNTvSC5pKbK
