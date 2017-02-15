@@ -12,7 +12,7 @@ install:
 script: 'python --version' # placeholder
 
 matrix:
-  allow-failures:
+  allow_failures:
     - python: 'nightly'
 
 notifications:
