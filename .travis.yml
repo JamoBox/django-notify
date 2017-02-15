@@ -6,6 +6,9 @@ python:
   - '3.6'
   - 'nightly'
 
+install:
+  - pip install -y Django
+
 script: 'python --version' # placeholder
 
 matrix:
