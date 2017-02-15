@@ -87,3 +87,8 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# Visual Studio
+django-notify.pyproj
+django-notify.sln
+.suo
