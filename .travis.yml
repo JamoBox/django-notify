@@ -7,7 +7,7 @@ python:
   - 'nightly'
 
 install:
-  - pip install -y Django
+  - pip install Django
 
 script: 'python --version' # placeholder
 
