@@ -14,3 +14,6 @@ script: 'python --version' # placeholder
 matrix:
   allow-failures:
     - python: 'nightly'
+
+notifications:
+    slack: tech-buddies:B704esrJDxKSumNTvSC5pKbK
