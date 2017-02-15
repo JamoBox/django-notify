@@ -12,6 +12,7 @@ install:
 script: 'python --version' # placeholder
 
 matrix:
+  fast_finish: true
   allow_failures:
     - python: 'nightly'
 
