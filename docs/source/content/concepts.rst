@@ -10,7 +10,7 @@ For example; you can set this as your routing key format definition:
 
 .. code-block:: python
 
-    DJANGO_NOTIFY_ROUTING_KEY = 'model.{}.{}.{}'``
+    DJANGO_NOTIFY_ROUTING_KEY = 'model.{}.{}.{}'
 
 Which is saying, always start the routing key with the string literal ``model`` and then delimit three additional bits of data with ``.``.
 
@@ -46,7 +46,7 @@ Cool, but we can do better. You can define your own key formatter by inheriting 
     class ModificationTime(formatters.BaseFormatter):
 
         def __init__(self, **kwargs):
-            super(MyKeyFormatter, self).__init__(kwargs)
+            super(ModificationTime, self).__init__(kwargs)
 
         def formatted_result(self):
              return str(kwargs['model']['modified_at'])
